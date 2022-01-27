@@ -1,0 +1,98 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 140 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 749818 0 0
+ciMethod java/lang/Object hashCode ()I 2049 1 256 0 -1
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 2049 1 47705 0 -1
+ciMethod java/util/HashMap hash (Ljava/lang/Object;)I 2081 1 73841 0 160
+ciMethod java/util/HashMap comparableClassFor (Ljava/lang/Object;)Ljava/lang/Class; 2081 1 546 0 -1
+ciMethod java/util/HashMap compareComparables (Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;)I 0 0 1 0 -1
+ciMethod java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 0 data 2 0x10002 0x3160 oops 0
+ciMethodData java/util/HashSet add (Ljava/lang/Object;)Z 2 16664 orig 264 56 91 149 105 0 0 0 0 120 152 67 19 0 0 0 0 184 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 193 0 2 0 1 0 0 0 229 39 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 104 0 0 0 255 255 255 255 5 0 8 0 0 0 0 0 data 13 0x80005 0x0 0x1b705530 0x2698 0x1b7055e0 0x1980 0xb0007 0x342 0x38 0x3cd9 0xf0003 0x3cd9 0x18 oops 2 2 java/util/LinkedHashMap 4 java/util/HashMap
+ciMethodData java/util/HashMap newNode (ILjava/lang/Object;Ljava/lang/Object;Ljava/util/HashMap$Node;)Ljava/util/HashMap$Node; 2 5452 orig 264 56 91 149 105 0 0 0 0 248 207 43 19 0 0 0 0 80 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 97 162 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 16 0 0 0 255 255 255 255 2 0 9 0 0 0 0 0 data 2 0x90002 0x144c oops 0
+instanceKlass org/gradle/process/internal/health/memory/JvmMemoryStatusSnapshot
+instanceKlass java/util/Comparator$$Lambda$418
+instanceKlass org/gradle/workers/internal/WorkerDaemonClientsManager$$Lambda$417
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass org/gradle/workers/internal/WorkerDaemonClient
+instanceKlass org/gradle/workers/internal/WorkerDaemonExpiration$SimpleMemoryExpirationSelector
+instanceKlass org/gradle/api/internal/file/collections/DefaultConfigurableFileCollection$UnresolvedItemsCollector
+instanceKlass org/gradle/internal/extensibility/ConventionAwareHelper$MappedPropertyImpl
+instanceKlass org/gradle/api/internal/ConventionMapping$MappedProperty
+instanceKlass org/gradle/api/internal/project/taskfactory/StandardTaskAction
+instanceKlass org/gradle/api/internal/project/taskfactory/DefaultTaskClassInfoStore$StandardTaskActionFactory
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$416
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$415
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$414
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$413
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$412
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$411
+instanceKlass org/gradle/api/internal/tasks/DefaultTaskInputPropertyRegistration
+instanceKlass org/gradle/api/internal/tasks/TaskInputPropertyRegistration
+instanceKlass org/gradle/api/tasks/TaskInputPropertyBuilder
+instanceKlass org/gradle/api/internal/tasks/DefaultTaskInputs$4
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$410
+instanceKlass org/gradle/api/internal/tasks/properties/FileParameterUtils$2
+instanceKlass org/gradle/api/internal/tasks/TaskPropertyUtils
+instanceKlass org/gradle/api/internal/tasks/AbstractTaskFilePropertyRegistration
+instanceKlass org/gradle/api/internal/tasks/TaskInputFilePropertyRegistration
+instanceKlass org/gradle/api/internal/tasks/TaskPropertyRegistration
+instanceKlass org/gradle/api/internal/tasks/StaticValue
+instanceKlass org/gradle/api/internal/tasks/TaskInputFilePropertyBuilderInternal
+instanceKlass org/gradle/api/internal/tasks/TaskFilePropertyBuilderInternal
+instanceKlass org/gradle/api/internal/tasks/DefaultTaskInputs$1
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$409
+instanceKlass org/gradle/api/internal/file/copy/DefaultCopySpec$$Lambda$408
+instanceKlass org/gradle/api/internal/file/copy/DefaultCopySpec$DefaultCopySpecAddress
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass org/gradle/api/internal/file/copy/DefaultCopySpec$$Lambda$407
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass org/gradle/api/internal/file/copy/DefaultCopySpec$DefaultCopySpecResolver
+instanceKlass org/gradle/api/internal/tasks/execution/SelfDescribingSpec
+instanceKlass org/gradle/api/internal/tasks/DefaultTaskOutputs$$Lambda$406
+instanceKlass org/gradle/api/internal/lambdas/SerializableLambdas
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$405
+instanceKlass org/gradle/api/internal/lambdas/SerializableLambdas$SerializableSpec
+instanceKlass org/gradle/api/tasks/AbstractCopyTask$$Lambda$404
+instanceKlass org/gradle/api/internal/file/copy/PathNotationConverter
+instanceKlass org/gradle/api/file/FileCopyDetails
+instanceKlass org/gradle/api/internal/file/copy/CopySpecInternal$CopySpecListener
+instanceKlass org/gradle/api/internal/file/copy/CopySpecInternal$CopySpecVisitor
+instanceKlass org/gradle/api/internal/file/copy/DefaultCopySpec
+instanceKlass org/gradle/api/internal/tasks/DefaultTaskLocalState
+instanceKlass org/gradle/api/internal/tasks/DefaultTaskDestroyables
+instanceKlass org/gradle/api/internal/tasks/TaskDestroyablesInternal
+instanceKlass org/gradle/api/tasks/TaskOutputFilePropertyBuilder
+instanceKlass org/gradle/api/internal/tasks/DefaultTaskOutputs
+instanceKlass org/gradle/api/internal/tasks/TaskInputsDeprecationSupport
+instanceKlass org/gradle/api/internal/FilePropertyContainer
+instanceKlass org/gradle/api/tasks/TaskInputFilePropertyBuilder
+instanceKlass org/gradle/api/tasks/TaskFilePropertyBuilder
+instanceKlass org/gradle/api/tasks/TaskPropertyBuilder
+instanceKlass org/gradle/api/internal/tasks/DefaultTaskInputs
+instanceKlass org/gradle/internal/logging/slf4j/DefaultContextAwareTaskLogger
+instanceKlass org/gradle/api/internal/AbstractTask$8
+instanceKlass org/gradle/api/tasks/TaskAction
+instanceKlass org/gradle/internal/logging/slf4j/ContextAwareTaskLogger$MessageRewriter
+instanceKlass org/gradle/api/specs/CompositeSpec
+instanceKlass org/gradle/api/internal/tasks/TaskMutator
+instanceKlass org/gradle/api/internal/tasks/TaskStateInternal
+instanceKlass org/gradle/api/internal/file/copy/CopySpecInternal$CopySpecAddress
+instanceKlass org/gradle/api/internal/file/copy/CopySpecResolver
+instanceKlass org/gradle/api/internal/file/copy/CopyActionExecuter
+instanceKlass org/gradle/api/internal/file/copy/DelegatingCopySpecInternal
+instanceKlass org/gradle/api/internal/AbstractTask$TaskInfo
+instanceKlass org/gradle/logging/LoggingManagerInternal
+instanceKlass org/gradle/logging/StandardOutputCapture
+instanceKlass org/gradle/api/internal/tasks/InputChangesAwareTaskAction
+instanceKlass org/gradle/api/internal/tasks/ImplementationAwareTaskAction
+instanceKlass groovy/util/ObservableList
+instanceKlass org/gradle/api/internal/tasks/TaskLocalStateInternal
+instanceKlass org/gradle/api/tasks/TaskLocalState
+instanceKlass org/gradle/api/tasks/TaskDestroyables
+instanceKlass org/gradle/api/internal/TaskOutputsInternal
+instanceKlass org/gradle/api/internal/TaskInputsInternal
+instanceKlass org/gradle/internal/logging/slf4j/ContextAwareTaskLogger
+instanceKlass org/gradle/api/tasks/TaskOutputs
+instanceKlass org/gradle/api/tasks/TaskInputs
