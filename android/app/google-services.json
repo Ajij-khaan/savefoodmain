@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "151787429918",
+    "project_id": "savefoodmain",
+    "storage_bucket": "savefoodmain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151787429918:android:10673b2bc1fc90697d0e0f",
+        "android_client_info": {
+          "package_name": "com.savefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151787429918-u0ra5qhbodd9sa1cfvarhj89r6e3343i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4ARhiaiF2CQqHVa5Ji_2_G92UqWUQ6vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151787429918-u0ra5qhbodd9sa1cfvarhj89r6e3343i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

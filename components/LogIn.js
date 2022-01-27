@@ -1,3 +1,4 @@
+import auth from '@react-native-firebase/auth';
 import React from 'react';
 import {Dimensions, Text, TouchableOpacity, View} from 'react-native';
 import DropShadow from 'react-native-drop-shadow';
@@ -10,6 +11,28 @@ const LogIn = props => {
   const [Password, setPassword] = React.useState();
 
   //console.log(Email, Password);
+
+  const createAccount = () => {
+    auth()
+      .createUserWithEmailAndPassword(
+        'jane.doe@example.com',
+        'SuperSecretPassword!',
+      )
+      .then(() => {
+        console.log('User account created & signed in!');
+      })
+      .catch(error => {
+        if (error.code === 'auth/email-already-in-use') {
+          console.log('That email address is already in use!');
+        }
+
+        if (error.code === 'auth/invalid-email') {
+          console.log('That email address is invalid!');
+        }
+
+        console.error(error);
+      });
+  };
 
   const navigation = props.navigation;
   const window = Dimensions.get('window');
