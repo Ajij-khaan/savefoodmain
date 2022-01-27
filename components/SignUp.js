@@ -1,3 +1,4 @@
+import auth from '@react-native-firebase/auth';
 import React from 'react';
 import {View} from 'react-native';
 import DropShadow from 'react-native-drop-shadow';
@@ -6,15 +7,27 @@ import IconButton from './button/IconButton';
 import model from './Styles/model';
 
 const SignUp = props => {
-  const [Name, setName] = React.useState('');
-  const [Email, setEmail] = React.useState('');
-  const [Password, setPassword] = React.useState('');
-  const [Address, setAddress] = React.useState('');
-  const [Phone, setPhone] = React.useState('');
-  const [Gender, setGender] = React.useState('');
+  const [Name, setName] = React.useState(null);
+  const [Email, setEmail] = React.useState(null);
+  const [Password, setPassword] = React.useState(null);
+  const [Address, setAddress] = React.useState(null);
+  const [Phone, setPhone] = React.useState(null);
+  const [EmailError, setEmailError] = React.useState(false);
+  const [PasswordError, setPasswordError] = React.useState(false);
+  const [User, setUser] = React.useState(null);
+  const [loader, setLoader] = React.useState(false);
   const navigation = props.navigation;
 
-  //console.log(Name, Email, Phone, Address, Password);
+  //   console.log(
+  //     User,
+  //     Name,
+  //     Email,
+  //     Phone,
+  //     Address,
+  //     Password,
+  //     EmailError,
+  //     PasswordError,
+  //   );
 
   return (
     <DropShadow style={model.shadow}>
@@ -23,14 +36,17 @@ const SignUp = props => {
           style={model.input}
           placeholder="Name.................."
           value={Name}
-          onChangeText={value => setName(value)}
+          onChangeText={val => setName(val)}
           mode="flat"
         />
         <TextInput
+          error={EmailError}
           style={model.input}
           placeholder="E-mail................"
           value={Email}
-          onChangeText={value => setEmail(value)}
+          onChangeText={val => {
+            setEmail(val);
+          }}
           mode="flat"
         />
         <View
@@ -43,7 +59,7 @@ const SignUp = props => {
             style={model.input}
             placeholder="Phone................"
             value={Phone}
-            onChangeText={value => setPhone(value)}
+            onChangeText={val => setPhone(val)}
             mode="flat"
           />
         </View>
@@ -51,18 +67,44 @@ const SignUp = props => {
           style={model.input}
           placeholder="Address................"
           value={Address}
-          onChangeText={value => setAddress(value)}
+          onChangeText={val => setAddress(val)}
           mode="flat"
         />
         <TextInput
+          error={PasswordError}
           style={model.input}
           placeholder="Password................"
           value={Password}
-          onChangeText={value => setPassword(value)}
+          onChangeText={val => {
+            setPassword(val);
+          }}
           mode="flat"
           secureTextEntry
         />
-        <IconButton label="Next" icon="skip-next" />
+        <IconButton
+          onPress={() => {
+            auth()
+              .createUserWithEmailAndPassword(Email, Password)
+              .then(userCredential => {
+                //console.log(userCredential.user)
+                setUser(userCredential.user);
+                //StoreData(userCredential.user);
+              })
+              .catch(error => {
+                if (error.code === 'auth/email-already-in-use') {
+                  console.log('That email address is already in use!');
+                }
+
+                if (error.code === 'auth/invalid-email') {
+                  console.log('That email address is invalid!');
+                }
+
+                console.error(error);
+              });
+          }}
+          label="Next"
+          icon="skip-next"
+        />
       </View>
     </DropShadow>
   );
